@@ -8,6 +8,6 @@ services:
       - key: DEBUG
         value: False
       - key: SECRET_KEY
-        value: your-secret-key
+        value: django-insecure-g9tkbu#04$2zlmn&#rv_sq7lre8l7%=xk+q3u=d7+44kujrpp=
       - key: ALLOWED_HOSTS
         value: 127.0.0.1,localhost,your-new-name.onrender.com
