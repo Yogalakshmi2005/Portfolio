@@ -2,13 +2,12 @@ services:
   - type: web
     name: portfolio
     env: python
-    plan: free
-    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate"
-    startCommand: "gunicorn Portfolio.wsgi"
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn Portfolio.wsgi:application
     envVars:
       - key: DEBUG
-        value: "False"
+        value: False
       - key: SECRET_KEY
-        sync: false
-      - key: DATABASE_URL
-        sync: false
+        value: your-secret-key
+      - key: ALLOWED_HOSTS
+        value: 127.0.0.1,localhost,your-new-name.onrender.com
