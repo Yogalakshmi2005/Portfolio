@@ -10,4 +10,4 @@ services:
       - key: SECRET_KEY
         value: django-insecure-g9tkbu#04$2zlmn&#rv_sq7lre8l7%=xk+q3u=d7+44kujrpp=
       - key: ALLOWED_HOSTS
-        value: 127.0.0.1,localhost,your-new-name.onrender.com
+        value: 127.0.0.1,localhost,portfolio.5cmq.onrender.com
